@@ -1,0 +1,37 @@
+<!-- This is the original page for '/' location in URL -->
+<html>
+	<head>
+ 	</head>
+	<body>
+		<div class="container">
+		<h1><div style="text-align: center;">MTG Inventory</div></h1>
+			<br><br><br>
+			<table style = "width:100%;margin-left:auto;margin-right:auto;">
+				<tr>
+					<td style="text-align: center; vertical-align: middle;" colspan="2";>Please select a color from above</td>
+					<form action="/selection/black" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/black.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+					<form action="/selection/blue" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/blue.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+					<form action="/selection/green" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/green.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+					<form action="/selection/red" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/red.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+					<form action="/selection/white" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/white.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+					<form action="/selection/colorless" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/colorless.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+					<form action="/selection/multicolor" method="POST">
+					  <input type="image" src="{{ url_for('static', filename='images/multicolor.svg') }}" name="button" height="10%" width="10%" class="centered-image">
+					</form>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
